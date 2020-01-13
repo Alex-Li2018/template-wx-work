@@ -1,0 +1,67 @@
+{
+    "name": "yao-uniapp_base",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev-cd:mp-weixin": "cross-env NODE_ENV=development CITY_NAME=chengdu UNI_INPUT_DIR=./src UNI_OUTPUT_DIR=dist/mp-weixin UNI_PLATFORM=mp-weixin vue-cli-service uni-build --mode chengdu_dev --watch",
+        "build-cd:mp-weixin": "cross-env NODE_ENV=production CITY_NAME=chengdu UNI_INPUT_DIR=./src UNI_OUTPUT_DIR=dist/mp-weixin  UNI_PLATFORM=mp-weixin vue-cli-service uni-build --mode chengdu --minimize",
+        "lintfix": "eslint --fix --ext .js,.vue src/",
+        "info": "node node_modules/@dcloudio/vue-cli-plugin-uni/commands/info.js",
+        "debug-uni": "cross-env NODE_ENV=development CITY_NAME=hangzhou  UNI_INPUT_DIR=./src UNI_PLATFORM=mp-weixin node --inspect-brk=5859  D:\\uniapp\\uniYao\\node_modules\\@vue\\cli-service\\bin\\vue-cli-service.js uni-build --watch"
+    },
+    "dependencies": {
+        "@dcloudio/uni-app-plus": "latest",
+        "@dcloudio/uni-h5": "latest",
+        "@dcloudio/uni-helper-json": "latest",
+        "@dcloudio/uni-mp-alipay": "latest",
+        "@dcloudio/uni-mp-baidu": "latest",
+        "@dcloudio/uni-mp-qq": "latest",
+        "@dcloudio/uni-mp-toutiao": "latest",
+        "@dcloudio/uni-mp-weixin": "latest",
+        "@dcloudio/uni-stat": "latest",
+        "flyio": "^0.6.2",
+        "regenerator-runtime": "^0.12.1",
+        "vue": "^2.6.11",
+        "vuex": "^3.0.1"
+    },
+    "devDependencies": {
+        "@dcloudio/uni-cli-shared": "latest",
+        "@dcloudio/uni-migration": "latest",
+        "@dcloudio/uni-template-compiler": "latest",
+        "@dcloudio/vue-cli-plugin-hbuilderx": "latest",
+        "@dcloudio/vue-cli-plugin-uni": "latest",
+        "@dcloudio/vue-cli-plugin-uni-optimize": "latest",
+        "@dcloudio/webpack-uni-mp-loader": "latest",
+        "@dcloudio/webpack-uni-pages-loader": "latest",
+        "@types/html5plus": "*",
+        "@types/uni-app": "*",
+        "@vue/cli-plugin-babel": "3.5.1",
+        "@vue/cli-service": "^3.11.0",
+        "babel-eslint": "^10.0.3",
+        "babel-plugin-import": "^1.11.0",
+        "cross-env": "^6.0.3",
+        "eslint": "^6.8.0",
+        "eslint-loader": "^3.0.3",
+        "eslint-plugin-html": "^6.0.0",
+        "eslint-plugin-vue": "^6.1.2",
+        "fs-extra": "^8.1.0",
+        "node-sass": "^4.12.0",
+        "postcss-comment": "^2.0.0",
+        "sass-loader": "^8.0.0",
+        "vue-template-compiler": "^2.6.10",
+        "webpack-replace-loader": "^1.3.0"
+    },
+    "browserslist": [
+        "last 3 versions",
+        "Android >= 4.4",
+        "ios >= 8"
+    ],
+    "uni-app": {
+        "scripts": {}
+    },
+    "config": {
+        "city": [
+            "chengdu"
+        ]
+    }
+}

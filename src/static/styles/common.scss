@@ -1,0 +1,147 @@
+
+// 引入基础样式库
+@import './varibale.scss';
+@import './mixins.scss';
+
+/* 通用字号、颜色、按钮等 */
+button::after{
+    display: none;
+}
+button{
+    padding: 0;
+    margin: 0;
+}
+
+// 循环生成fz-10到fz-30
+@for $i from 10 through 30 {
+    .fz-#{$i} {
+        font-size: 2 * $i !important;
+    }
+}
+
+.theme-color {
+    color: $theme-color;
+}
+.pink-color{
+    color: #f7776a !important;
+}
+.cyan-color{
+    color: #16a5af !important;
+}
+.green-color{
+    color: #188038 !important;
+}
+.red-color{
+    color: #d13c0e !important;
+}
+.blue-color{
+    color: $blueColor !important;
+}
+.dark-blue-color{
+    color: $darkBlueColor;
+}
+.white-color{
+    color: $whiteColor !important;
+}
+.black1a-color{
+    color: #1a1a1a !important;
+}
+.gold-color{
+    color: #fbd9a4 !important;
+}
+
+//flex 常用
+.flex_layout{
+    @include flexBox(flex-start, center);
+}
+.flex_layout_c{
+    @include flexBox(center, center);
+}
+.flex_layout_b{
+    @include flexBox(space-between, center);
+}
+.flex_layout_a{
+    @include flexBox(space-around, center);
+}
+.flex_layout_w{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.flex_layout_n{
+    @include flexBox(center, center);
+    flex-direction: column;
+}
+.flex_layout_c_style{
+    @include flexBox(center, center);
+    margin: 30rpx 0;
+}
+
+// 文本相关
+.ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+// 对齐方式
+.position-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top-center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* 骨架屏全局样式
+ ---------------------------------------------------------------- */
+ @keyframes gradient {
+    0% {
+        opacity: .5;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .5;
+    }
+}
+
+@mixin skeletons-child {
+    .skeletons-child {
+        background: #F2F2F2 !important;
+        color: transparent !important;
+        animation: gradient linear 1s infinite;
+        > text,
+        > view,
+        > swiper,
+        > button,
+        > image {
+            visibility: hidden;
+        }
+    } 
+}
+
+@include skeletons-child;
+
+.skeletons {
+   .skeletons-rect {
+        @include skeletons-child;
+   }
+
+   .skeletons-circle {
+        @include skeletons-child;
+        border-radius: 50% !important;
+   }
+}

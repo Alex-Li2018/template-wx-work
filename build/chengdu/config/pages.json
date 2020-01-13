@@ -1,0 +1,71 @@
+{
+    "permission": {
+      "scope.userLocation": {
+        "desc": "获取地理位置"
+      }
+    },
+    "pages": [
+      {
+        "path": "pages/index",
+        "style": {
+          "enablePullDownRefresh": true
+        }
+      },
+      {
+        "path": "pages/mustSee/index",
+        "style": {
+          "enablePullDownRefresh": true
+        }
+      },
+      {
+        "path": "pages/me/index",
+        "style": {
+          "enablePullDownRefresh": true
+        }
+      }
+    ],
+    "networkTimeout": {
+      "request": 60000,
+      "connectSocket": 10000,
+      "uploadFile": 30000,
+      "downloadFile": 10000
+    },
+    "tabBar": {
+      "color": "#91A0B4",
+      "selectedColor": "#1478FF",
+      "backgroundColor": "#fff",
+      "borderStyle": "white",
+      "height": "44px",
+      "list": [
+        {
+          "pagePath": "pages/index",
+          "text": "首页",
+          "iconPath": "static/images/icons/index.png",
+          "selectedIconPath": "static/images/icons/index-active.png",
+          "active": false
+        },
+        {
+          "pagePath": "pages/mustSee/index",
+          "text": "家长找房",
+          "iconPath": "static/images/icons/must-see.png",
+          "selectedIconPath": "static/images/icons/must-see-active.png",
+          "active": false
+        },
+        {
+          "pagePath": "pages/me/index",
+          "text": "我的",
+          "iconPath": "static/images/icons/me.png",
+          "selectedIconPath": "static/images/icons/me-active.png",
+          "active": false
+        }
+      ],
+      "position": "bottom"
+    },
+    "subPackages": [],
+    "globalStyle": {
+      "navigationBarTextStyle": "black",
+      "navigationBarTitleText": "学区宝",
+      "navigationBarBackgroundColor": "#fff",
+      "backgroundColor": "#000000"
+    }
+  }

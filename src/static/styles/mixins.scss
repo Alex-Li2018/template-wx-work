@@ -1,0 +1,31 @@
+@import "./varibale";
+
+// flex
+@mixin flexBox($justify: center, $align: center, $v: row) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $v;
+}
+
+// 渐变
+@mixin linearBg($position: right, $start: #3b7cce, $end: #4ca0d5) {
+    background: linear-gradient(to $position, $start, $end);
+}
+
+// 圆型
+@mixin circle($size: 56rpx) {
+    width: $size;
+    height: $size;
+    border-radius: $size;
+    overflow: hidden;
+}
+
+// 超出隐藏
+@mixin textOverflow($line: 2) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $line;
+}

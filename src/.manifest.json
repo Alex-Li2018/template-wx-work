@@ -1,0 +1,115 @@
+{
+  "name": "Yao-uniapp",
+  "appid": "",
+  "description": "",
+  "versionName": "1.0.0",
+  "versionCode": "100",
+  "transformPx": false,
+  "uniStatistics":{  
+    "enable": false 
+  },
+  "mp-weixin": {
+    "usingComponents": true,
+    "optimization": {
+      "subPackages": true
+    },
+    "permission": {
+      "scope.userLocation": {
+        "desc": "获取地理位置"
+      }
+    },
+    "description": "项目配置文件",
+    "packOptions": {
+      "ignore": []
+    },
+    "setting": {
+      "urlCheck": true,
+      "es6": false,
+      "postcss": false,
+      "minified": false,
+      "newFeature": true,
+      "coverView": true,
+      "autoAudits": false,
+      "checkInvalidKey": true,
+      "checkSiteMap": true,
+      "uploadWithSourceMap": true,
+      "babelSetting": {
+        "ignore": [],
+        "disablePlugins": [],
+        "outputPath": ""
+      }
+    },
+    "compileType": "miniprogram",
+    "libVersion": "2.5.2",
+    "appid": "wx1ad883b8c9fc80be",
+    "projectname": "%E6%AD%A6%E6%B1%89%E6%88%BF%E5%B0%8F%E5%9B%A2",
+    "miniprogramRoot": "",
+    "debugOptions": {
+      "hidedInDevtools": []
+    },
+    "scripts": {},
+    "simulatorType": "wechat",
+    "simulatorPluginLibVersion": {},
+    "condition": {
+      "search": {
+        "current": -1,
+        "list": []
+      },
+      "conversation": {
+        "current": -1,
+        "list": []
+      },
+      "plugin": {
+        "current": -1,
+        "list": []
+      },
+      "game": {
+        "list": []
+      },
+      "gamePlugin": {
+        "current": -1,
+        "list": []
+      },
+      "miniprogram": {
+        "current": 2,
+        "list": [
+          {
+            "id": -1,
+            "name": "pages/lotteryDetail",
+            "pathName": "pages/lotteryDetail",
+            "query": "id=&project_id=29073&utm_source=njfxt&utm_medium=weapp&utm_compaign=project_all&utm_content=2&utm_term=",
+            "scene": null
+          },
+          {
+            "id": -1,
+            "name": "pages/lottery/showCode",
+            "pathName": "pages/lottery/showCode",
+            "query": "id=3101&code=174&type=1&title=",
+            "scene": null
+          },
+          {
+            "id": -1,
+            "name": "subPackages/comment/pages/discuss",
+            "pathName": "subPackages/comment/pages/discuss",
+            "query": "id=54",
+            "scene": null
+          },
+          {
+            "id": -1,
+            "name": "subPackages/tools/pages/login",
+            "pathName": "subPackages/tools/pages/login",
+            "query": "",
+            "scene": null
+          },
+          {
+            "id": -1,
+            "name": "pages/consult/index",
+            "pathName": "pages/consult/index",
+            "query": "changeType=2",
+            "scene": null
+          }
+        ]
+      }
+    }
+  }
+}
